@@ -2,4 +2,69 @@
 Implement media controls
 Implement graphics with HTML5 canvas and SVG -->
 
-<!-- Parei na página 22 -->
+<!-- Parei na página 32 (remover elementos do DOM) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Tag script -->
+  <script>
+    window.onload = function(){
+      var element = document.getElementById('outerDiv').insertBefore(document.createElement('article'), document.getElementById('innerDiv'));
+      element.innerText = "My new <article> element before innerDiv."
+
+
+    };
+  </script>
+
+
+</head>
+
+<body>
+
+  <div id="outerDiv">
+    <p class='mainPara'>Main Paragraph</p>
+    <ul>
+      <li>First List Item</li>
+      <li>Second List Item</li>
+      <li>Third List Item</li>
+      <li>Fourth List Item</li>
+    </ul>
+    <div id="innerDiv">
+      <p class='subPara' id='P1'>Paragraph 1</p>
+      <p class='subPara' id='P2'>Paragraph 2</p>
+      <p class='subPara' id='P3'>Paragraph 3</p>
+      <p class='subPara' id='P4'>Paragraph 4</p>
+    </div>
+    <table>
+      <tr>
+        <td>Row 1
+        </td>
+      </tr>
+      <tr>
+        <td>Row 2
+        </td>
+      </tr>
+      <tr>
+        <td>Row 3
+        </td>
+      </tr>
+      <tr>
+        <td>Row 4
+        </td>
+      </tr>
+      <tr>
+        <td>Row 5
+        </td>
+      </tr>
+    </table>
+    <input type="text" />
+    <input type="submit" value="Submit" />
+  </div>
+
+</body>
+
+</html>
